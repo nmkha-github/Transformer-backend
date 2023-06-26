@@ -1,4 +1,4 @@
-# from transformers import pipeline
+from transformers import pipeline
 
 class Transformer:
     def __init__(self):
@@ -7,8 +7,8 @@ class Transformer:
     def load_model(self):
         try:
             pass
-            # self.summarizer = pipeline(
-            #         "summarization", model="Phongle1311/my_awesome_billsum_model")
+            self.summarizer = pipeline(
+                    "summarization", model="Phongle1311/my_awesome_billsum_model")
         except:
             return False
         
