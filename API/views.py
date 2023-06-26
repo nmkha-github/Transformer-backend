@@ -23,5 +23,5 @@ def predict(request):
     except:
         return Response("Data must have content field")
     
-    summary_text = model.summarize(text)
+    summary_text = model.summarize(text)[0]
     return Response({'summary_text': summary_text})
