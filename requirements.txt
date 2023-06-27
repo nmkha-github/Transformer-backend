@@ -5,3 +5,4 @@ djangorestframework
 transformers
 whitenoise
 django-cors-headers
+pysqlite3-binary
